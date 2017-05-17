@@ -7,15 +7,12 @@
     "start": "node ./server/server.js",
     "test": "mocha",
     "knex": "knex",
-    "heroku-postbuild": "knex migrate:rollback --knexfile ./server/knexfile.js; knex migrate:latest --knexfile ./server/knexfile.js; knex seed:run --knexfile ./server/knexfile.js",
-    "nodemon": "node ./server/server.js"
+    "heroku-postbuild": "knex migrate:rollback --knexfile server/knexfile.js; knex migrate:latest --knexfile server/knexfile.js; knex seed:run --knexfile ./server/knexfile.js",
+    "nodemon": "node server/server.js"
     },
   "engines": {
     "node": "v7.9.0"
   },
-  "keywords": [],
-  "author": "",
-  "description": "",
   "dependencies": {
     "body-parser": "^1.17.1",
     "cookie-parser": "^1.4.3",
