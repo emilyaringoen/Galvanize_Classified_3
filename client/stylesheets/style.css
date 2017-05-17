@@ -1,0 +1,17 @@
+.colorNav {
+  background-color: #f1f6f6;
+}
+
+body {
+  background-color: #343536;
+}
+
+.sort {
+  padding-bottom: 2em;
+}
+
+#label {
+  padding-left: 1em;
+  padding-right: .5em;
+  color: white;
+}
